@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<defs>
+  <radialGradient id="zbg" cx="50%" cy="35%" r="60%">
+    <stop offset="0%" stop-color="#1c1840"/>
+    <stop offset="100%" stop-color="#020210"/>
+  </radialGradient>
+  <radialGradient id="zhead" cx="32%" cy="26%" r="68%">
+    <stop offset="0%" stop-color="#ffe868"/>
+    <stop offset="50%" stop-color="#f0c040"/>
+    <stop offset="100%" stop-color="#886010"/>
+  </radialGradient>
+  <radialGradient id="zorb" cx="28%" cy="28%" r="68%">
+    <stop offset="0%" stop-color="#ffd060"/>
+    <stop offset="60%" stop-color="#f09820"/>
+    <stop offset="100%" stop-color="#804000"/>
+  </radialGradient>
+  <filter id="zglow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="7" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="zeyeglow" x="-80%" y="-80%" width="360%" height="360%">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect width="200" height="200" fill="url(#zbg)"/>
+
+<!-- ambient head glow -->
+<circle cx="100" cy="84" r="58" fill="#e0a820" opacity="0.09" filter="url(#zglow)"/>
+
+<!-- orbs -->
+<circle cx="25" cy="66" r="15" fill="#6a3008" opacity="0.9"/>
+<circle cx="25" cy="66" r="11" fill="url(#zorb)"/>
+<circle cx="21" cy="62" r="4" fill="#ffe080" opacity="0.65"/>
+<circle cx="175" cy="66" r="15" fill="#6a3008" opacity="0.9"/>
+<circle cx="175" cy="66" r="11" fill="url(#zorb)"/>
+<circle cx="171" cy="62" r="4" fill="#ffe080" opacity="0.65"/>
+<circle cx="100" cy="16" r="12" fill="#6a3008" opacity="0.9"/>
+<circle cx="100" cy="16" r="8" fill="url(#zorb)"/>
+<circle cx="97" cy="13" r="3" fill="#ffe080" opacity="0.65"/>
+<!-- faint orb trails -->
+<line x1="36" y1="70" x2="60" y2="80" stroke="#f09820" stroke-width="1.2" opacity="0.22"/>
+<line x1="164" y1="70" x2="140" y2="80" stroke="#f09820" stroke-width="1.2" opacity="0.22"/>
+<line x1="100" y1="28" x2="100" y2="44" stroke="#f09820" stroke-width="1.2" opacity="0.22"/>
+
+<!-- head shadow -->
+<circle cx="102" cy="88" r="48" fill="#3c1c00" opacity="0.55"/>
+<!-- head -->
+<circle cx="100" cy="84" r="46" fill="url(#zhead)"/>
+<!-- face plate (recessed centre panel) -->
+<ellipse cx="100" cy="86" rx="29" ry="25" fill="#b08818" opacity="0.55"/>
+<!-- geometric band around face -->
+<path d="M58 84 Q100 91 142 84" stroke="#806010" stroke-width="2" fill="none" opacity="0.4"/>
+
+<!-- eye sockets -->
+<rect x="71" y="78" width="24" height="15" rx="5" fill="#0a2828"/>
+<rect x="105" y="78" width="24" height="15" rx="5" fill="#0a2828"/>
+<!-- eyes teal -->
+<rect x="73" y="80" width="20" height="11" rx="4" fill="#16a898"/>
+<rect x="107" y="80" width="20" height="11" rx="4" fill="#16a898"/>
+<rect x="75" y="81" width="16" height="8" rx="3" fill="#38e8d8" filter="url(#zeyeglow)"/>
+<rect x="109" y="81" width="16" height="8" rx="3" fill="#38e8d8" filter="url(#zeyeglow)"/>
+<!-- eye highlight -->
+<rect x="76" y="82" width="7" height="3.5" rx="1" fill="#aafff8" opacity="0.55"/>
+<rect x="110" y="82" width="7" height="3.5" rx="1" fill="#aafff8" opacity="0.55"/>
+
+<!-- chin -->
+<ellipse cx="100" cy="109" rx="19" ry="9" fill="#a07010" opacity="0.75"/>
+<!-- neck connector -->
+<rect x="86" y="127" width="28" height="12" rx="4" fill="#7a5808"/>
+
+<!-- robe -->
+<path d="M44 138 L156 138 L178 200 L22 200 Z" fill="#09091e"/>
+<path d="M58 138 L142 138 L160 200 L40 200 Z" fill="#0e0e28"/>
+<!-- robe shoulder darks -->
+<path d="M44 138 Q55 155 60 175 L46 175 Q40 155 40 138 Z" fill="#060612"/>
+<path d="M156 138 Q145 155 140 175 L154 175 Q160 155 160 138 Z" fill="#060612"/>
+<!-- gold centre stripe -->
+<path d="M88 138 L112 138 L118 200 L82 200 Z" fill="#c09010" opacity="0.85"/>
+<path d="M93 138 L107 138 L112 200 L88 200 Z" fill="#f0c040"/>
+<!-- collar -->
+<path d="M60 138 Q100 152 140 138 L136 148 Q100 162 64 148 Z" fill="#806010"/>
+<!-- collar gem -->
+<polygon points="100,131 108,139 100,146 92,139" fill="#28b0a8"/>
+<polygon points="100,133 106,139 100,145 94,139" fill="#50e8e0"/>
+</svg>

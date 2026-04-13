@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<defs>
+  <radialGradient id="jbg" cx="50%" cy="30%" r="60%">
+    <stop offset="0%" stop-color="#201008"/>
+    <stop offset="100%" stop-color="#080400"/>
+  </radialGradient>
+  <radialGradient id="jface" cx="36%" cy="28%" r="66%">
+    <stop offset="0%" stop-color="#f0a060"/>
+    <stop offset="55%" stop-color="#d87828"/>
+    <stop offset="100%" stop-color="#904010"/>
+  </radialGradient>
+  <radialGradient id="jhair" cx="30%" cy="20%" r="70%">
+    <stop offset="0%" stop-color="#fff060"/>
+    <stop offset="55%" stop-color="#e8d020"/>
+    <stop offset="100%" stop-color="#906000"/>
+  </radialGradient>
+  <filter id="jglow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="7" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect width="200" height="200" fill="url(#jbg)"/>
+
+<!-- warm orange glow -->
+<ellipse cx="100" cy="90" rx="70" ry="60" fill="#e08020" opacity="0.07" filter="url(#jglow)"/>
+
+<!-- WILD HAIR — Junkrat's most iconic feature -->
+<!-- hair shadow -->
+<ellipse cx="102" cy="48" rx="64" ry="42" fill="#604000" opacity="0.5"/>
+<!-- main hair mass -->
+<ellipse cx="100" cy="46" rx="62" ry="40" fill="url(#jhair)"/>
+<!-- wild spiky points -->
+<polygon points="100,2 108,30 92,30" fill="#ffe040"/>
+<polygon points="68,8 82,34 66,36" fill="#f0d020"/>
+<polygon points="42,20 64,40 52,48" fill="#e8c810"/>
+<polygon points="132,8 118,34 134,36" fill="#f0d020"/>
+<polygon points="158,20 136,40 148,48" fill="#e8c810"/>
+<polygon points="30,40 54,52 44,62" fill="#d8b800"/>
+<polygon points="170,40 146,52 156,62" fill="#d8b800"/>
+<!-- hair texture streaks -->
+<path d="M60 20 Q72 40 70 60" stroke="#c8a000" stroke-width="2.5" fill="none" opacity="0.5"/>
+<path d="M80 10 Q88 32 86 54" stroke="#c8a000" stroke-width="2" fill="none" opacity="0.45"/>
+<path d="M120 10 Q112 32 114 54" stroke="#c8a000" stroke-width="2" fill="none" opacity="0.45"/>
+<path d="M140 20 Q128 40 130 60" stroke="#c8a000" stroke-width="2.5" fill="none" opacity="0.5"/>
+
+<!-- FACE -->
+<circle cx="101" cy="98" r="46" fill="#702808" opacity="0.5"/>
+<circle cx="100" cy="96" r="44" fill="url(#jface)"/>
+
+<!-- eye sockets (sunken, intense) -->
+<ellipse cx="80" cy="88" rx="14" ry="12" fill="#5a1c08" opacity="0.7"/>
+<ellipse cx="120" cy="88" rx="14" ry="12" fill="#5a1c08" opacity="0.7"/>
+<!-- eyes - crazy red -->
+<circle cx="80" cy="88" r="9" fill="#c00000"/>
+<circle cx="120" cy="88" r="9" fill="#c00000"/>
+<circle cx="80" cy="88" r="5.5" fill="#ff2020"/>
+<circle cx="120" cy="88" r="5.5" fill="#ff2020"/>
+<circle cx="78" cy="86" r="2.5" fill="#ff8080" opacity="0.6"/>
+<circle cx="118" cy="86" r="2.5" fill="#ff8080" opacity="0.6"/>
+<!-- skull-like brow -->
+<path d="M66 80 Q80 74 90 80" stroke="#5a1c08" stroke-width="3" fill="none"/>
+<path d="M110 80 Q120 74 134 80" stroke="#5a1c08" stroke-width="3" fill="none"/>
+
+<!-- WIDE GRIN — key Junkrat feature -->
+<!-- mouth opening -->
+<path d="M68 112 Q100 130 132 112" fill="#2a0c04"/>
+<path d="M72 113 Q100 128 128 113 L124 116 Q100 132 76 116 Z" fill="#1a0802"/>
+<!-- jagged teeth -->
+<polygon points="76,114 80,114 78,126" fill="#f0e8d8"/>
+<polygon points="84,116 88,116 86,126" fill="#f0e8d8"/>
+<polygon points="92,118 96,118 94,127" fill="#f0e8d8"/>
+<polygon points="100,118 104,118 102,127" fill="#f0e8d8"/>
+<polygon points="108,118 112,118 110,126" fill="#f0e8d8"/>
+<polygon points="116,116 120,116 118,126" fill="#f0e8d8"/>
+<polygon points="124,114 128,114 126,124" fill="#f0e8d8"/>
+<!-- nose (tiny, skeletal) -->
+<ellipse cx="100" cy="104" rx="5" ry="4" fill="#a05018" opacity="0.6"/>
+
+<!-- BODY — dark scavenged gear -->
+<path d="M44 148 L156 148 L164 200 L36 200 Z" fill="#141410"/>
+<path d="M56 148 L144 148 L150 200 L50 200 Z" fill="#202018"/>
+<!-- metal prosthetic leg hint (left side) -->
+<path d="M44 148 L56 148 L52 200 L36 200 Z" fill="#888888" opacity="0.6"/>
+<line x1="44" y1="160" x2="56" y2="160" stroke="#aaa" stroke-width="2" opacity="0.4"/>
+<line x1="42" y1="175" x2="55" y2="175" stroke="#aaa" stroke-width="2" opacity="0.4"/>
+<!-- ragged clothing lines -->
+<path d="M80 148 Q82 168 79 200" stroke="#2e2e28" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M120 148 Q118 168 121 200" stroke="#2e2e28" stroke-width="2" fill="none" opacity="0.7"/>
+</svg>

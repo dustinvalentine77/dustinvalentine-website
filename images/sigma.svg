@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<defs>
+  <radialGradient id="sbg" cx="50%" cy="35%" r="60%">
+    <stop offset="0%" stop-color="#14082a"/>
+    <stop offset="100%" stop-color="#030210"/>
+  </radialGradient>
+  <radialGradient id="shead" cx="34%" cy="26%" r="66%">
+    <stop offset="0%" stop-color="#e0daf8"/>
+    <stop offset="50%" stop-color="#b0a8d0"/>
+    <stop offset="100%" stop-color="#605880"/>
+  </radialGradient>
+  <radialGradient id="ssuit" cx="32%" cy="22%" r="68%">
+    <stop offset="0%" stop-color="#d898ff"/>
+    <stop offset="50%" stop-color="#a858e8"/>
+    <stop offset="100%" stop-color="#501888"/>
+  </radialGradient>
+  <radialGradient id="srock" cx="28%" cy="25%" r="70%">
+    <stop offset="0%" stop-color="#b0b0c8"/>
+    <stop offset="65%" stop-color="#787890"/>
+    <stop offset="100%" stop-color="#404050"/>
+  </radialGradient>
+  <filter id="sglow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="8" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="seyeglow" x="-80%" y="-80%" width="360%" height="360%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect width="200" height="200" fill="url(#sbg)"/>
+
+<!-- purple ambient glow -->
+<circle cx="100" cy="90" r="64" fill="#9040e0" opacity="0.07" filter="url(#sglow)"/>
+
+<!-- FLOATING ROCKS — signature Sigma element -->
+<!-- rock left -->
+<polygon points="18,54 38,44 46,62 28,72" fill="#505060" opacity="0.8"/>
+<polygon points="20,56 36,46 44,62 30,70" fill="url(#srock)"/>
+<line x1="20" y1="56" x2="36" y2="46" stroke="#c0c0d8" stroke-width="1.2" opacity="0.4"/>
+<line x1="20" y1="56" x2="30" y2="70" stroke="#c0c0d8" stroke-width="1.2" opacity="0.3"/>
+<!-- rock right -->
+<polygon points="182,54 162,44 154,62 172,72" fill="#505060" opacity="0.8"/>
+<polygon points="180,56 164,46 156,62 170,70" fill="url(#srock)"/>
+<line x1="180" y1="56" x2="164" y2="46" stroke="#c0c0d8" stroke-width="1.2" opacity="0.4"/>
+<line x1="180" y1="56" x2="170" y2="70" stroke="#c0c0d8" stroke-width="1.2" opacity="0.3"/>
+<!-- rock top small -->
+<polygon points="100,12 112,20 108,34 88,30 86,18" fill="#686878" opacity="0.7"/>
+<polygon points="100,14 110,21 106,32 90,30 88,20" fill="url(#srock)" opacity="0.8"/>
+<!-- faint tether lines -->
+<line x1="44" y1="62" x2="64" y2="80" stroke="#9060c0" stroke-width="1" opacity="0.2"/>
+<line x1="156" y1="62" x2="136" y2="80" stroke="#9060c0" stroke-width="1" opacity="0.2"/>
+<line x1="100" y1="32" x2="100" y2="44" stroke="#9060c0" stroke-width="1" opacity="0.2"/>
+
+<!-- HEAD — dignified, somewhat bald -->
+<!-- head shadow -->
+<ellipse cx="102" cy="90" rx="48" ry="46" fill="#200838" opacity="0.5"/>
+<!-- head -->
+<ellipse cx="100" cy="88" rx="46" ry="44" fill="url(#shead)"/>
+<!-- slight shadow on lower face -->
+<ellipse cx="100" cy="102" rx="36" ry="20" fill="#5a5070" opacity="0.25"/>
+
+<!-- eyebrows (distinguished, slightly furrowed) -->
+<path d="M72 78 Q84 73 92 76" stroke="#4a4060" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M108 76 Q116 73 128 78" stroke="#4a4060" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+<!-- eyes — glowing blue (contemplative) -->
+<ellipse cx="83" cy="86" rx="11" ry="9" fill="#101428"/>
+<ellipse cx="117" cy="86" rx="11" ry="9" fill="#101428"/>
+<ellipse cx="83" cy="86" rx="8" ry="6.5" fill="#2040b0" filter="url(#seyeglow)"/>
+<ellipse cx="117" cy="86" rx="8" ry="6.5" fill="#2040b0" filter="url(#seyeglow)"/>
+<ellipse cx="83" cy="86" rx="5.5" ry="4.5" fill="#5090ff"/>
+<ellipse cx="117" cy="86" rx="5.5" ry="4.5" fill="#5090ff"/>
+<circle cx="81" cy="84" r="2.5" fill="#b0c8ff" opacity="0.55"/>
+<circle cx="115" cy="84" r="2.5" fill="#b0c8ff" opacity="0.55"/>
+
+<!-- nose (aquiline, distinguished) -->
+<path d="M97 95 Q100 102 103 95" stroke="#8880a8" stroke-width="2" fill="none"/>
+<path d="M95 105 Q100 109 105 105" stroke="#8880a8" stroke-width="2" fill="none" opacity="0.6"/>
+
+<!-- mouth (calm, slight grimace) -->
+<path d="M82 115 Q100 118 118 115" stroke="#7060a0" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+<!-- ear -->
+<ellipse cx="54" cy="90" rx="8" ry="12" fill="#a09ac0" opacity="0.7"/>
+<ellipse cx="54" cy="90" rx="5" ry="9" fill="#b0a8d0" opacity="0.5"/>
+<ellipse cx="146" cy="90" rx="8" ry="12" fill="#a09ac0" opacity="0.7"/>
+<ellipse cx="146" cy="90" rx="5" ry="9" fill="#b0a8d0" opacity="0.5"/>
+
+<!-- SUIT — purple armor, chest piece -->
+<path d="M38 142 L162 142 L170 200 L30 200 Z" fill="#200840"/>
+<path d="M50 142 L150 142 L156 200 L44 200 Z" fill="#2c1050"/>
+<!-- chest plate -->
+<path d="M62 142 L138 142 L142 188 L58 188 Z" fill="url(#ssuit)" opacity="0.9"/>
+<!-- chest plate details -->
+<path d="M74 150 L126 150" stroke="#e890ff" stroke-width="1.5" opacity="0.4"/>
+<path d="M70 158 L130 158" stroke="#e890ff" stroke-width="1.5" opacity="0.35"/>
+<ellipse cx="100" cy="166" rx="18" ry="12" fill="#6020a0" opacity="0.7"/>
+<ellipse cx="100" cy="166" rx="12" ry="8" fill="#b860ff" opacity="0.6"/>
+<ellipse cx="100" cy="166" rx="6" ry="4" fill="#e0a0ff" opacity="0.7"/>
+<!-- shoulder guards -->
+<path d="M38 142 L62 142 L58 166 L34 158 Z" fill="#7030b0" opacity="0.8"/>
+<path d="M162 142 L138 142 L142 166 L166 158 Z" fill="#7030b0" opacity="0.8"/>
+</svg>
