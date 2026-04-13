@@ -92,7 +92,7 @@ nav {
 
 .nav-links > li > a {
   font-family: var(--pixel);
-  font-size: 7px;
+  font-size: 9px;
   color: var(--dim);
   padding: 0 16px;
   height: 100%;
@@ -160,7 +160,7 @@ nav {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('../images/hero.jpg');
+  background-image: url('../images/photos/hero.jpg');
   background-size: cover;
   background-position: center top;
   opacity: 0.42;
@@ -232,7 +232,7 @@ section {
 
 .section-label {
   font-family: var(--pixel);
-  font-size: 8px;
+  font-size: 10px;
   color: var(--dim);
   letter-spacing: 4px;
   margin-bottom: 40px;
@@ -800,7 +800,7 @@ footer span {
    TABLET  ≤ 900px  — compress nav, allow wrapping
 ═══════════════════════════════════════════════════════════ */
 @media (max-width: 900px) {
-  .nav-links > li > a { padding: 0 10px; font-size: 6.5px; }
+  .nav-links > li > a { padding: 0 10px; font-size: 8px; }
   .nav-logo { font-size: 11px; letter-spacing: 2px; }
 }
 
